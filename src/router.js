@@ -12,6 +12,7 @@ import Jurisdiction from './pages/Jurisdiction';
 import RichText from './pages/RichText';
 import Buttons from './pages/UI/Button';
 import Modal from './pages/UI/Modals';
+import Mymodal from './pages/UI/Mymodal/index';
 import Loading from './pages/UI/Loading';
 import Notification from './pages/UI/Notification';
 import Message from './pages/UI/Message';
@@ -35,6 +36,7 @@ class Router extends Component{
                                     <Route path="/home" component={Home} />
                                     <Route path="/ui/buttons" component={Buttons} />
                                     <Route path="/ui/modals" component={Modal} />
+                                    <Route path="/ui/mymodal" component={Mymodal} />
                                     <Route path="/ui/loadings" component={Loading}/>
                                     <Route path="/ui/notification" component={Notification}/>
                                     <Route path="/ui/tabs" component={Tab}/>

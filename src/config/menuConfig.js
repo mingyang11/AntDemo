@@ -16,6 +16,10 @@ const MenuConfig =  [
                 key: '/ui/modals',
             },
             {
+                title: '自定义modal',
+                key: '/ui/mymodal',
+            },
+            {
                 title: 'Loading',
                 key: '/ui/loadings',
             },
