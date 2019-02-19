@@ -15,14 +15,13 @@ const model2 = {
     3: '加盟',
 };
 class CityControl extends Component{
-    // constructor (props) {
-    //     super(props);
-    //     this.state = {
-    //         delVisibel: false,
-    //         editVisible: false,
-    //     };
-    // }
-    state = {};
+    constructor (props) {
+        super(props);
+        this.state = {
+            delVisibel: false,
+            editVisible: false,
+        };
+    }
     params = {
         page:1
     };
@@ -191,7 +190,7 @@ class CityControl extends Component{
         ];
         return <div>
             <Card className="card-wrap">
-                <BaseForm field={fields} onSearch={this.handleFilter} />
+                <BaseForm field={fields} onSearch={this.RequestData} />
             </Card>
             <Card className="card-wrap">
                 <Table

@@ -128,6 +128,7 @@ class Order extends Component{
             },
             {
                 title: '操作',
+                width: 100,
                 render: (text, record) => {
                     if (record.type === 1) {
                         return (
