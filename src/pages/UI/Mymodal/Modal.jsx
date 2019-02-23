@@ -50,7 +50,7 @@ class Modal extends Component {
                     <Button className="close" onClick={() => this.handleClose()}>取消</Button>
                 </div>
             </div>
-            <div className="mask" onClick={() => this.handleMask()}>mask</div>
+            <div className="mask" onClick={() => this.handleMask()} />
         </div>
     }
 }
