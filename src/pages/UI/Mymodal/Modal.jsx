@@ -28,8 +28,7 @@ class Modal extends Component {
     };
     handleClose = () => {
         const { onClose } = this.props;
-        onClose;
-        // onClose();
+        onClose || onClose();
         this.setState({
             visible: false,
         });

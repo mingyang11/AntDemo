@@ -40,13 +40,13 @@ class Header extends Component{
         const menu = (
             <Menu>
                 <Menu.Item key="0">
-                    <a href="#">退出</a>
+                    <a>退出</a>
                 </Menu.Item>
                 <Menu.Item key="1">
-                    <a href="#">修改密码</a>
+                    <a>修改密码</a>
                 </Menu.Item>
                 <Menu.Item key="2">
-                    <a href="#">忘记密码</a>
+                    <a>忘记密码</a>
                 </Menu.Item>
             </Menu>
         );
@@ -56,7 +56,7 @@ class Header extends Component{
                     <Col span='24'>
                         <span>欢迎，{this.state.userName}</span>
                         <Dropdown overlay={ menu } trigger={['click']}>
-                            <a className="ant-dropdown-link" href="#">
+                            <a className="ant-dropdown-link">
                                 退出
                             </a>
                         </Dropdown>

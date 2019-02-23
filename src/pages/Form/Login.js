@@ -56,7 +56,7 @@ class Login extends Component{
                             })(
                                 <Checkbox>记住密码</Checkbox>
                             )}
-                            <a style={{ float: "right" }} className="login-form-forgot" href="#">忘记密码？</a>
+                            <a style={{ float: "right" }} className="login-form-forgot">忘记密码？</a>
                         </FormItem>
                         <FormItem>
                             <Button type="primary" style={{ width:"300px" }} onClick={this.handleSumit}>登录</Button>

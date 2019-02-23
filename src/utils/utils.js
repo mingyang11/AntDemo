@@ -44,7 +44,7 @@ export default {
         }
         let options = [];
         data.map((item) => {
-            options.push(<Option value={item.id}>{item.name}</Option>)
+            return options.push(<Option value={item.id}>{item.name}</Option>)
         });
         return options;
     },
@@ -54,7 +54,7 @@ export default {
         }
         let radios = [];
         data.map((item) => {
-            radios.push(<Radio value={item.id}>{item.name}</Radio>)
+            return radios.push(<Radio value={item.id}>{item.name}</Radio>)
         });
         return radios;
     }
