@@ -16,10 +16,19 @@ class Buttons extends Component{
             load: true,
         });
     }
+    xunhua = () => {
+        for(let i = 1;i<=5;i++) {
+            (function(){
+                setTimeout(() => {
+                    console.log(i);
+                }, 1000);
+            })();
+        }
+    }
     render() {
         return <div>
             <Card title="基础按钮" className="card-wrap">
-                <Button type="primary">primary</Button>
+                <Button type="primary" onClick={this.xunhua}>primary</Button>
                 <Button>default</Button>
                 <Button type="dashed">dashed</Button>
                 <Button type="danger">danger</Button>

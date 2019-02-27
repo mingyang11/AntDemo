@@ -23,6 +23,7 @@ class Order extends Component{
     };
     componentDidMount() {
         this.RequestData();
+        this.xunhua();
     }
     RequestData = () => {
         let _this = this;
@@ -32,6 +33,13 @@ class Order extends Component{
         this.params = params;
         this.RequestData();
     };
+    xunhua = () => {
+        for(let i = 1;i<=5;i++) {
+            setTimeout(() => {
+                console.log(i);
+            }, 1000);
+        }
+    }
     render() {
         const fields = [
             {
