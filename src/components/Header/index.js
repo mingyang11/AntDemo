@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Row, Col, Menu, Dropdown} from 'antd';
-// import { connect } from 'react-redux';
 import "./index.less";
 import Util from '../../utils/utils';
 import axios from '../../axios';
@@ -79,10 +78,4 @@ class Header extends Component{
         );
     }
 }
-// const mapStateToProps = (state) =>{
-//     return {
-//         menuName: state.menuName
-//     };
-// };
 export default Header;
-// export default connect(mapStateToProps)(Header);
