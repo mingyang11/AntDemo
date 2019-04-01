@@ -24,6 +24,7 @@ import BasicTable from './pages/Table/BasicTable';
 import Bar from './pages/Echarts/Bar';
 import Line from './pages/Echarts/Line';
 import Pie from './pages/Echarts/Pie';
+import Gtwo from './pages/G2/index';
 class Router extends Component{
     render() {
         return (
@@ -48,6 +49,7 @@ class Router extends Component{
                                     <Route path="/permission" component={Jurisdiction} />
                                     <Route path="/rich" component={RichText} />
                                     <Route path="/ui/carousel" component={Carousel} />
+                                    <Route path="/g2" component={Gtwo} />>
                                     <Route path="/form/login" component={Login} />
                                     <Route path="/form/reg" component={Register} />
                                     <Route path="/table/basic" component={BasicTable} />

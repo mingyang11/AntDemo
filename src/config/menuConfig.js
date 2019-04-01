@@ -126,6 +126,10 @@ const MenuConfig =  [
         key: '/permission'
     },
     {
+        title: 'G2',
+        key: '/g2'
+    },
+    {
         title: '404',
         key: '/404'
     },
