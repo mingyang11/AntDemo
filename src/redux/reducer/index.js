@@ -10,7 +10,8 @@ export default (state = initialState, action) => {
             return {
                 ...state,
                 menuName: action.menuName
-            };
+            }
+            break;
         default:
             break;
     }

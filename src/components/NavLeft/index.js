@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Menu } from 'antd';
 import { NavLink } from 'react-router-dom';
 import { connect } from 'react-redux';
-import { switchMenu } from './../../redux/action';
+import { switchMenu } from './../../redux/action/index';
 import MenuConfig from './../../config/menuConfig';
 import './index.less';
 
@@ -15,6 +15,7 @@ class NavLeft extends Component{
     };
     handleOnclick = ({ item, key }) => {
         const { dispatch } = this.props;
+        console.log(item.props.title);
         dispatch(switchMenu(item.props.title));
         this.setState({
             currentKey: key,
@@ -54,7 +55,7 @@ class NavLeft extends Component{
                 </div>
                 <Menu
                     onClick={this.handleOnclick}
-                    selectedKeys={this.state.currentKey}
+                    selectedKeys={[this.state.currentKey]}
                     theme="dark"
                 >
                     { this.state.menuTreeNode }

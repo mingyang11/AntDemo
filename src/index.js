@@ -3,10 +3,10 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import Router from './router';
 import { Provider } from 'react-redux';
-import configStore from './redux/store';
+import createStore from './redux/store/index';
 import registerServiceWorker from './registerServiceWorker';
 
-const store = configStore();
+const store = createStore();
 
 ReactDOM.render(
     <Provider store={store}>

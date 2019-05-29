@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { HashRouter, Route, Switch, Redirect} from 'react-router-dom'
+import { Route, Switch, Redirect, BrowserRouter} from 'react-router-dom'
 import App from './App';
 import Admin from './admin';
 import Home from './pages/Home';
@@ -28,7 +28,7 @@ import Gtwo from './pages/G2/index';
 class Router extends Component{
     render() {
         return (
-            <HashRouter>
+            <BrowserRouter>
                 <App>
                     <Switch>
                         <Route path="/" render={() =>
@@ -64,7 +64,7 @@ class Router extends Component{
                         </Route>
                     </Switch>
                 </App>
-            </HashRouter>
+            </BrowserRouter>
         );
     }
 }

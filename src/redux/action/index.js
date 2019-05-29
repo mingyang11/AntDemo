@@ -5,6 +5,6 @@ export const type = {
 export function switchMenu(menuName) {
     return {
         type: type.SWITCH_MENU,
-        menuName
+        menuName: menuName,
     }
 }
